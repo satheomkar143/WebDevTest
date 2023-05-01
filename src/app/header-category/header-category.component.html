@@ -1,0 +1,50 @@
+<app-drop-menu></app-drop-menu>
+<header>
+  <i class="fa-solid fa-angle-left"></i>
+  <div class="headerMenu">
+    <div class="shopDiv">
+      <i class="fa-solid fa-shop"></i>
+      Da Otto
+    </div>
+    <div class="arrow">
+      <i class="fa-solid fa-angle-up"></i>
+      <i class="fa-solid fa-angle-down"></i>
+    </div>
+    <div class="searchDiv">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search for Restaurants (Press Enter to search)" #searchInput (keyup.enter)="searchResto(searchInput.value)" [(ngModel)]="searchInp">
+    </div>
+    <i class="fa-solid fa-filter" onclick="showFilter()"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</header>
+<section class="category">
+  <h1>Category</h1>
+  <div class="categoryDiv">
+    <div class="categoryItem">
+      <img src="assets/images/macD.png" alt="">
+      Baked
+    </div>
+    <div class="categoryItem">
+      <img src="assets/images/macD.png" alt="">
+      Sweet
+    </div>
+    <div class="categoryItem">
+      <img src="assets/images/macD.png" alt="">
+      Hot Dish
+    </div>
+    <div class="categoryItem">
+      <img src="assets/images/macD.png" alt="">
+      Fast Foods
+    </div>
+    <div class="categoryItem">
+      <img src="assets/images/macD.png" alt="">
+      Salads
+    </div>
+  </div>
+</section>
+
+<section class="Restaurants">
+  <h1>Restaurants</h1>
+  <app-restaurants></app-restaurants>
+</section>

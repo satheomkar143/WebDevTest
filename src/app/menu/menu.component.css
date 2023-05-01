@@ -1,0 +1,51 @@
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.singleMenu{
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: var(--customGray);
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+.singleMenu img{
+  width: 100%;
+  height: 200px;
+  /* border-radius: 15px; */
+}
+
+.menuName{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.menuName .itemCost{
+  font-size: 1.5rem;
+}
+
+
+/* ---------media query------- */
+@media (max-width: 1200px) {
+  .singleMenu{
+    width: 400px;
+  }
+  .singleMenu img{
+    height: 250px;
+  }
+}
+@media (max-width: 1100px) {
+  .singleMenu{
+    width: 300px;
+  }
+  .singleMenu img{
+    height: 200px;
+  }
+}

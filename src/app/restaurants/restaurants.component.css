@@ -1,0 +1,109 @@
+.restaurantDiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+
+.singleResto{
+  width: 300px;
+  background-color: aqua;
+  margin: 20px 0;
+  background-color: var(--customGray);
+  box-shadow: 0 0 2px 1px rgb(226, 226, 226);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.singleResto img{
+  width: 100%;
+  height: 200px;
+}
+
+.restoName {
+  margin: 15px 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+.restoName h3{
+  white-space: nowrap;
+  text-overflow: hidden;
+  width: 60%;
+}
+
+.restoName .openDiv{
+  background-color: white;
+  color: var(--customBlue);
+  width: 100px;
+  box-shadow: 0 0 2px 1px rgb(226, 226, 226);
+  border-radius: 5px;
+  text-align: center;
+}
+.closed{
+  color: var(--customOrange);
+  background-color: var(--customOrangeLight);
+}
+
+.restoDiscr{
+  margin: 10px;
+  height: 50px;
+  font-size: 15px;
+  text-align: justify;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* -------------media query------- */
+@media (max-width:1200px) {
+  .singleResto{
+    width: 400px;
+  }
+}
+@media (max-width:1100px) {
+  .singleResto{
+    width: 350px;
+  }
+}
+@media (max-width:1000px) {
+  .singleResto{
+    width: 300px;
+  }
+}
+@media (max-width:895px) {
+  .singleResto{
+    width: 500px;
+  }
+  .singleResto img{
+    height: 250px;
+  }
+}
+@media (max-width:850px) {
+  .singleResto{
+    width: 350px;
+  }
+  .singleResto img{
+    height: 200px;
+  }
+}
+@media (max-width:750px) {
+  .singleResto{
+    width: 400px;
+  }
+  .singleResto img{
+    height: 250px;
+  }
+}
+
+@media (max-width:460px) {
+  .singleResto{
+    width: 300px;
+  }
+  .singleResto img{
+    height: 200px;
+  }
+}

@@ -1,0 +1,126 @@
+.restaurantDetail{
+  margin: 20px;
+  position: relative;
+  min-width: calc(100vw - 310px);
+  /* background-color: rgb(240, 210, 210); */
+  padding-top: 60px;
+}
+
+.fa-angle-left, .fa-cart-shopping{
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+.fa-angle-left{
+  background-color: var(--customBlue);
+}
+
+.fa-cart-shopping{
+  background-color: var(--customOrange);
+  right: 0;
+}
+
+.restoDetails{
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.restoDetails img{
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.detail{
+  /* max-width: 500px; */
+  /* background-color: red; */
+  font-size: 15px;
+  text-align: justify;
+  
+}
+
+.detail *{
+  margin: 5px 0;
+}
+.detail i{
+  margin-right: 10px;
+}
+
+.detail h1{
+  font-size: 3rem;
+}
+.openHr{
+  padding-left: 30px;
+}
+
+.clockDiv{
+  position: relative;
+  /* background-color: red; */
+}
+.clockDiv .fa-clock{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-75%);
+}
+
+.menuTabs .tabs{
+  font-size: 20px;
+  background-color:var(--customGray);
+  color: var(--customBlue);
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active{
+  background-color:var(--customBlue) !important;
+  color: var(--customGray) !important;
+}
+
+.menus h1{
+  margin: 20px 0;
+  font-size: 3rem;
+}
+
+/* ---------media query-------- */
+@media (max-width:950px){
+  .restoDetails img{
+    width: 250px;
+  }
+}
+@media (max-width:850px){
+  .restoDetails img{
+    width: 300px;
+  }
+}
+@media (max-width:650px){
+  .restoDetails{
+    flex-direction: column;
+  }
+  .restoDetails img{
+  margin-left: 0;
+  }
+  .menuTabs .tabs{
+    font-size: 15px;
+  }
+}
+@media (max-width:425px){
+  .menuTabs .tabs{
+    padding: 5px;
+    margin-right: 10px;
+  }
+}

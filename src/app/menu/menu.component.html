@@ -1,0 +1,9 @@
+<div class="menu">
+  <div class="singleMenu" *ngFor="let i of menus">
+    <img [src]="i.itemPhoto" alt="{{i.itemName}}" onError="this.src='assets/images/food.jpg'"/>
+    <div class="menuName">
+      <h1>{{i.itemName}}</h1>
+      <p class="itemCost">{{i.itemCost | currency}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<app-drop-menu></app-drop-menu>
+<section class="restaurantDetail">
+  <i class="fa-solid fa-angle-left" routerLink="/"></i>
+  <i class="fa-solid fa-cart-shopping"></i>
+  
+  <div class="restoDetails">
+    <div class="detail">
+      <h1>{{restaurantDetail.restaurantName}}</h1>
+      <p>{{restaurantDetail.restaurantDescription}}</p>
+      <div class="clockDiv">
+        <i class="fa-solid fa-clock"></i>
+        <p *ngFor="let i of restaurantDetail.openingHours" class="openHr">{{i}}</p>
+      </div>
+      <p><i class="fa-solid fa-phone-volume"></i> {{restaurantDetail.contactNumber}}</p>
+      <p><i class="fa-solid fa-globe"></i>{{restaurantDetail.websiteUrl}}</p>
+    </div>
+    <img [src]="restaurantDetail.restaurantImage" alt="">
+  </div>
+
+  <div class="menuTabs">
+    <div class="tabs" [class.active]="selectedIndex == 1" (click)="setActive(1)" (click)="allFoods()">All</div>
+    <div class="tabs" [class.active]="selectedIndex == 2" (click)="setActive(2)" (click)="selectedFood('Baked')">Baked ({{bakedFoods.length}})</div>
+    <div class="tabs" [class.active]="selectedIndex == 3" (click)="setActive(3)" (click)="selectedFood('Sweet')">Sweet ({{sweetFoods.length}})</div>
+    <div class="tabs" [class.active]="selectedIndex == 4" (click)="setActive(4)" (click)="selectedFood('Hot Dish')">Hot Dish ({{hotFoods.length}})</div>
+  </div>
+
+  <div class="menus">
+    <h1>Menu</h1>
+    <app-menu [menus]="foods"></app-menu>
+  </div>
+
+</section>

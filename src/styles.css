@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+:root{
+  --customBlue : rgb(80,62,157);
+  --customOrange : rgb(251,109,58);
+  --customGray: rgb(247,247,247);
+  --customOrangeLight: rgb(255,240,235);
+}

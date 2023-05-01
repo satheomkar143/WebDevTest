@@ -1,0 +1,39 @@
+.dropMenu{
+  background-color: var(--customGray);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+
+.logo{
+  /* background-color: aqua; */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 30px; */
+  font-weight: bolder;
+}
+.logo i{
+  font-size: 3rem;
+  margin-right: 10px;
+  color: var(--customBlue);
+}
+
+.fa-bars{
+  background-color: var(--customBlue);
+  color: white !important;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px !important;
+  margin-left: 20px;
+}
+
+/* --------------media query------ */
+@media (max-width:850px) {
+  .dropMenu{
+    display: block;
+  }
+}
